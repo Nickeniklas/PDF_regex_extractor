@@ -3,7 +3,9 @@ import re
 
 plates = []
 
-with pdfplumber.open("sample_data.pdf") as pdf:
+pdf_file = "license_plates.pdf"
+
+with pdfplumber.open(f"./data/{pdf_file}") as pdf:
     for page in pdf.pages:
         text = page.extract_text()
         if text:
