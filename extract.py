@@ -14,7 +14,7 @@ def extract_licenseplates(file_path):
                     plates.extend(re.findall(r"[A-Z]{3}[-–—]?\d{3}", text))
     except Exception as e:
         print("failed to extract.", e)
-    print(f"Found {len(plates)} license plates:")
+    print(f"Found {len(plates)} license plates.")
     return plates
 
 if __name__ == "__main__":
@@ -22,4 +22,4 @@ if __name__ == "__main__":
     file_path = "license_plates.pdf"
     plates = extract_licenseplates(file_path)
     if plates:
-        print(plates)
+        print("Extracted License Plates:", plates)
