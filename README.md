@@ -6,7 +6,4 @@ Using **pdfplumber**
 **Pattern:** XYZ-123
 
 ### Requirements
-```
-pdfplumber
-re
-```
+```pdfplumber```
